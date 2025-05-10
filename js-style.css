@@ -1,0 +1,17 @@
+  html, body { margin:0; padding:0; overflow:hidden; }
+  #cloak-overlay {
+    position: fixed; top:0; left:0; right:0; bottom:0;
+    background:#fff; z-index:999999;
+    display:flex; justify-content:center; align-items:center;
+  }
+  .cloak-spinner {
+    width:60px; height:60px;
+    border:8px solid #ccc; border-top:8px solid #0f0;
+    border-radius:50%; animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #debug {
+    font-family:monospace; padding:20px;
+    white-space:pre-wrap; word-wrap:break-word;
+    z-index:1000000; display:none;
+  }
